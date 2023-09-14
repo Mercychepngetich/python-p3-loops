@@ -1,14 +1,12 @@
 #!/usr/bin/env python3
 
 def happy_new_year():
-   year = 10
-   while year >= 1:
-         
-         print(year) 
-         year -= 1
-
-
-   print("Happy New Year!")
+    count=11
+    while count>=2:
+        count -= 1
+        print(count)
+        if count==1:
+            print("Happy New Year!")
         
 
 
@@ -18,11 +16,17 @@ def square_integers(int_list):
     list=[n**2 for n in int_list]
     return list
 
+   #or
+   #new_list=[]
+    #for num in int_list:
+     #   new_list.append(num**2)
+    #return new_list
+
 def fizzbuzz():
     # code goes here!
     num=1
     for num in range(1, 101):
-        print(num)
+       
         
         if num%3==0 and num%5==0:
             print("FizzBuzz")
@@ -32,6 +36,6 @@ def fizzbuzz():
             print("Buzz")
         else:
             print(num)
-        num+=1
+        
 
 
